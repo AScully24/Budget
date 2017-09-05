@@ -1,0 +1,20 @@
+<Page loaded="pageLoaded">
+	<GridLayout rows="auto,auto,auto,auto,auto,auto,auto,auto" columns="*,*,*,*	">
+	
+		<Label text="Total Budget:" row="0" col="0" colSpan="2"/>
+		<Label id="totalValue" text="{{ currency + income }}" row="0" col="2" />
+		
+		<Label text="Spent:" row="1" col="0" colSpan="2"/>
+		<Label id="spendValue" text="£200" row="1" col="2" />
+		
+		<Button id="viewTagSummaryIcon" class="icon" tap="viewTagSummary" text="Tag Summary" row="2" col="0" />
+		<Button id="viewHistoryIcon" class="icon" tap="viewHistory" text="History" row="2" col="1" />
+		
+		<Label text="Remaining:" row="3" col="0" colSpan="2"/>
+		<Label id="remainingValue" text="£100" row="3" col="2" colSpan="2"/>
+		
+		<Button id="addExpense" class="icon" text="Add Expense" row="3" col="4"  />
+		
+		<Button id="settings" class="icon" text="Settings" tap="settings" row="4" col="0"  />
+	</GridLayout>
+</Page>

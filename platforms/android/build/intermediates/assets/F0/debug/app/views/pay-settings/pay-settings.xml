@@ -1,0 +1,24 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded" xmlns:dd="nativescript-drop-down">
+	 <StackLayout>
+		
+		<GridLayout rows="auto" columns="*,*" >
+			<Label text="Pay Frequency" row="0" col="0" />
+			<dd:DropDown items="{{ payFrequencyOptions }}" 
+				selectedIndex= "{{ payFrequencyIndex }}"
+				selectedIndexChanged="payFrequencyChange"
+				col="1"/>
+		</GridLayout>
+		
+				
+		<GridLayout rows="auto" columns="*,*" >
+			<Label text="Next Pay Date" />
+			<Button text="test" onTap="showDate"/>
+		</GridLayout>		
+		
+		<GridLayout rows="auto" columns="*,*" >
+			<Label text="Income" />
+			<TextField id="income"  text="{{ income }}" keyboardType="number" col="1"/>
+		</GridLayout>
+		
+	</StackLayout>
+</Page>

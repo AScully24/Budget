@@ -1,0 +1,11 @@
+<Page>
+	<GridLayout rows="auto, *" columns="3*, *">
+		<Label text="Add Tag" row="0" col="0" colspan="2"/>
+		<Button tap="addMonthlyBill" class="icon" text="icon" row="0" col="1" />
+		
+		
+		<!-- Need to add the buttons to edit and delete -->
+		<ListView items="{{ groceryList }}" id="groceryList" row="1" colSpan="2"/>
+		
+	</GridLayout>
+</Page>

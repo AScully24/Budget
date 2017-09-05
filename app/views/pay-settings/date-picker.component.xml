@@ -1,0 +1,8 @@
+<StackLayout>
+	<DatePicker loaded="onPickerLoaded($event)" 
+		dateChange="onDateChanged($event)" 
+		monthChange="onMonthChanged($event)"
+		dayChange="onDayChanged($event)"
+		yearChange="onYearChanged($event)"
+		verticalAlignment="center"/>
+</StackLayout>

@@ -1,0 +1,3 @@
+<StackLayout>
+	<TextField text="Hello, World!" shownModally="closeCallback"/>
+</StackLayout>
